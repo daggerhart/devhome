@@ -1,0 +1,81 @@
+# Absolute root directory for projects.
+roots:
+    - /www/sites
+
+discovery_filter: '*.dev'
+
+# (optional) - Directory within site folder that is served as the DocumentRoot.
+# Can be overridden per-project
+public_root: www
+
+# (optional) - Directories to ignore
+ignore:
+    - ignore.dev
+
+# (optional) - Header navigation links
+utils:
+    phpmyadmin:
+        icon: database
+        name: phpMyAdmin
+        url: http://phpmyadmin.dev
+    github:
+        icon: github
+        name: Github
+        url: https://github.com/daggerhart
+    bitbucket:
+        icon: bitbucket
+        name: Bitbucket
+        url: https://bitbucket.com/daggerhart
+
+# Project settings
+projects:
+
+    # Project key is folder name relative to the top-level "root" setting.
+    epi.dev:
+        name: 'EPI'
+        description: 'Drupal'
+        public_root: www
+        links:
+            dev:
+                icon: laptop
+                url: http://epi.dev
+            prod:
+                icon: fire
+                url: https://teachwithepi.com
+            git:
+                icon: github
+                url: https://github.com/daggerhart/teachwithepi
+            wiki:
+                icon: wikipedia-w
+                url: https://github.com/daggerhart/teachwithepi/wiki
+            host:
+                icon: server
+                url: https://aws.amazon.com
+
+    epicenter.dev:
+        name: 'EPICenter'
+        description: 'o2 WordPress'
+        links:
+            dev:
+                icon: laptop
+                url: http://epicenter.dev/wp-login.php?showlogin=yes
+            prod:
+                icon: fire
+                url: https://epicenter.teachwithepi.com/wp-login.php?showlogin=4adminsOnly
+            git:
+                icon: github
+                url: https://github.com/daggerhart/epicenter
+            host:
+                icon: server
+                url: https://aws.amazon.com
+
+# Project Template
+# ---
+#    project_folder:
+#        name: ''
+#        description: ''
+#        public_root: ''
+#        links:
+#            one:
+#                icon: home
+#                url: http://google.com
